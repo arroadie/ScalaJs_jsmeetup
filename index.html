@@ -1,42 +1,281 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Scalajs jsmeetup by arroadie</title>
+<html lang="en">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Scalajs jsmeetup</h1>
-        <p></p>
+<head>
+  <meta charset="utf-8">
 
-        <p class="view"><a href="https://github.com/arroadie/ScalaJs_jsmeetup">View the Project on GitHub <small>arroadie/ScalaJs_jsmeetup</small></a></p>
+  <title>Javascript Chile - ScalaJs</title>
+
+  <meta name="description" content="Como usar, por que y donde (quien?)">
+  <meta name="author" content="Thiago Costa | @arroadie">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/default.css" id="theme">
+  <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+  <link rel="stylesheet" type="text/css" href="highlight/styles/default.css">
+  <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 
-        <ul>
-          <li><a href="https://github.com/arroadie/ScalaJs_jsmeetup/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/arroadie/ScalaJs_jsmeetup/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/arroadie/ScalaJs_jsmeetup">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="scala-js---jsmeetup-chile" class="anchor" href="#scala-js---jsmeetup-chile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scala Js - jsmeetup chile</h1>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/arroadie">arroadie</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <style type="text/css">
+    .title {
+     color: black !important;
+    }
+  </style>
+
+</head>
+<div class="reveal"><div class="slides">
+  <section class="past" style="display: block;" data-index-h="0" contenteditable="false" hidden="">
+    <div class="slide-edit-lock"><br></div>
+    <div class="kreator-slide-content">
+      <div style="font-size: 70px; margin-top: -60px; margin-left: -20px; margin-right: -20px;">
+        <div style="text-align: center;">Scala<i>(?)</i>Js</div>
+        <div style="text-align: center;">o</div>
+        <div style="text-align: center;"><strong style="color: navy;">Y</strong><strong style="color: red;">A</strong><strong style="color: green;">Js</strong><strong style="color: yellow;">C</strong> - Yet Another JS Compiler</div>
+      </div>
+      <br />
+      <img src="img/milk.png" />
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  </section>
+  <section class="past" style="display: block;" data-index-h="0" contenteditable="false" hidden="">
+    <div class="slide-edit-lock"><br></div>
+    <div class="kreator-slide-content">
+      <ul style="text-align: left; display: block;">1. ScalaJs</ul>
+      <ul style="text-align: left; display: block;">2. Scala(?)Js</ul>
+      <ul style="text-align: left; display: block;">3. Por que?</ul>
+      <ul style="text-align: left; display: block;">4. Ok, pero por que?
+        <li style="padding-left: 15px; display: block;">4-1. Type safe</li>
+        <li style="padding-left: 15px; display: block;">4-2. Safe</li>
+        <li style="padding-left: 15px; display: block;">4-3. Reusable</li>
+        <li style="padding-left: 15px; display: block;">4-4. DRY</li>
+        <li style="padding-left: 15px; display: block;">4-5. Tooling</li>
+      </ul>
+      <ul style="text-align: left; display: block;">5. Ejemplos
+        <li style="padding-left: 15px; display: block;">5-1. Duh!</li>
+        <li style="padding-left: 15px; display: block;">5-2. Duh(?)!</li>
+        <li style="padding-left: 15px; display: block;">5-3. Oh, buena...</li>
+      </ul>
+    </div>
+  </section><section class="past" style="display: block;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content">
+    <div style="text-align: center;">1. ScalaJs</div>
+    <div><br></div>
+    <blockquote>More than a compiler, an entire ecosystem</blockquote>
+    <div>ScalaJs es un compilador (o generador?) de código JavaScript a partir de una fuente de código scala</div>
+    <div>.scala => .js</div>
+    <div><br></div>
+    <div>La gran diferencia entre otros generadores de código Js está en que <i>ScalaJs</i> trae todo el ecosistema del lenguaje a la implementación local</div>
+  </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">2. Scala(?)Js</div></div>
+  <dir><br></dir>
+  <div style="float: left; text-align: left;">
+    <li>Interoperabilidad con Java</li>
+    <li>Type Inference</li>
+    <li>Concurrencia y Distribución</li>
+    <li>Traits</li>
+    <li>Pattern Matching</li>
+    <li>High Order Functions</li>
+  </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content">
+    <div style="text-align: center;">3. Por que?</div>
+    <div><br></div>
+    <div>Scala es uno de los lenguajes con mejor performance a cambio de una curva de aprendizaje, digamos, divertida...</div>
+    <div>Scala corre sobre la JVM, pero a la vez es un lenguaje funcional con herramientas muy potentes (del lenguaje) y librerías con equivalente performance</div>
+    <br>
+    <div>Una applicación utilizando Scala con Akka es capaz de contestar hasta 50 millones de mensajes por segundo <br><small>(48 core AMD Opteron, 128 GB ECC DDR3, Ubuntu 11.10 utilizando Java 7)</small></div>
+  </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">4. Ok, pero por que?</div></div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content" style="margin-top: -120px;">
+    <div style="text-align: center;">4-1. Type safe</div>
+    <br>
+    <pre>
+      <code class="scala">
+        def alReves(recibe: String) : String = {
+          recibe.reverse
+        }
+      </code>
+    </pre>
+  <div>Contractos estrictos y garantia de utilización segura</div>
+  <img src="img/type-safe.gif" />
+  </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center; margin-top: -150px;">4-2. Simply Safe</div></div>
+  <br>
+  <div>Evitamos que los códigos en el cliente no sean distintos (en materia de contracto) al servidor</div>
+  <div>P.Ej.:</div>
+  <div>
+  <pre>
+    <code class="scala">
+      def rompePalabra(recibe: String) : Array[String] = {
+        recibe.split("")
+      }
+    </code>
+  </pre>
+  </div>
+  <dir style="width: 1030px;">
+    <img style="margin-left: -150px; display: inline;float: left;" src="img/rompe-palabra-js-console.gif">
+    <img style="display: inline;float: left; margin: 10px;" src="img/rompe-palabra-scala-console.gif">
+  </dir>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">4-3. Reusable</div></div>
+  <br>
+  <div>Como dijimos, se pueden crear trozos de código que se puedan utilizar tanto en el servidor como en el cliente, avitando así la duplicitad y por lo tanto facilitando el mantenimiento del código</div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+    <div class="kreator-slide-content">
+      <div style="text-align: center;">4-4. DRY</div>
+      <div style="display: inline-block; margin-left: -430px; width: 1800px;">
+        <pre><code style="width: 750px; float: left; display: block; margin: 21px; height: 150px;" class="scala">case class Persona(nombre: String, apellido: String, edad: Int) {
+  def nombreCompleto: String = s"$nombre $apellido, $edad"
+}</code></pre>
+        <pre><code style="width: 750px; float: left; display: block; margin-top: -10px; margin: 21px; height: 150px;" class="javascript">var Persona = function(nombre, apellido, edad) {
+  var nombreCompleto = function(){
+    return nombre + " " +  apellido + ", " + edad
+  }
+}</code></pre>
+      </div>
+    </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+    <div class="kreator-slide-content">
+      <div style="text-align: center;">4-4. DRY</div>
+      <div style="display: inline-block; margin-left: -430px; width: 1800px;">
+        <pre><code style="width: 750px; float: left; display: block; margin: 21px; height: 150px;" class="scala">case class Persona(nombre: String, apellido: String, edad: Int) {
+  def nombreCompleto: String = s"$nombre $apellido, $edad"
+}</code></pre>
+        <pre><code style="width: 750px; float: left; display: block; margin-top: -10px; margin: 21px; height: 150px;" class="javascript">var Persona = function(nombre, apellido, edad) {
+  var nombreCompleto = function(){
+    return nombre + " " +  apellido + ", " + edad
+  }
+}</code></pre>
+      </div>
+    </div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">4-5. Tooling</div></div>
+  <img src="img/tooling.png" />
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">5. Ejemplos</div></div>
+</section><section class="past" style="display: none;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">5-1. Duh!</div></div>
+  <div style="float: left; display: block; width: 1030px;">
+    <img src="img/holaMundo-scala.png" style="width: 500px;">
+    <img src="img/holaMundo-console.png" style="float: left; width: 500px;">
+  </div>
+</section><section class="past" style="display: block;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div style="text-align: center;">5-2. Duh(?)!</div></div>
+  <br>
+  <iframe src="TouchingTheDom.html" style="width: 500px; height: 500px; background-color: white; float: left; margin-left: -150px;"></iframe>
+  <img src="img/touching-the-dom.png" style="width: 540px;" />
+</section><section class="past" style="display: block;" data-index-h="0" contenteditable="false" hidden="">
+  <div class="kreator-slide-content" style="margin-top: -200px;"><div style="text-align: center;">5-3. Oh, buena...</div></div>
+  <br>
+  <iframe src="canvas.html" style="background-color: white; width: 500px; height: 200px; float: left;"></iframe>
+  <img src="img/canvas.png" style="width: 600px; margin-right: -220px; margin-top: -10px;">
+</section><section class="present" style="display: block;" data-index-h="0" contenteditable="false">
+  <div class="slide-edit-lock"><br></div>
+  <div class="kreator-slide-content"><div><br></div><div>  Referencias:</div></div>
+  <ul>
+    <li><a href="https://www.scala-js.org">www.scala-js.org</a></li>
+    <li><a href="http://www.scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html">www.scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html</a></li>
+    <li><a href="http://www.scala-lang.org">www.scala-lang.org</a></li>
+  </ul>
+</section></div></div></div>
+
+<!-- The navigational controls UI -->
+<aside class="controls">
+  <a class="left" href="#">&#x25C4;</a>
+  <a class="right" href="#">&#x25BA;</a>
+  <a class="up" href="#">&#x25B2;</a>
+  <a class="down" href="#">&#x25BC;</a>
+</aside>
+
+<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+<div class="progress"><span></span></div>
+
+</div>
+
+<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+<script src="lib/js/head.min.js"></script>
+
+<script>
+  // Load the main reveal.js script
+  head.js( 'js/reveal.js', function() {
+    // Parse the query string into a key/value object
+    var query = {};
+
+    location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+      query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+    } );
+
+    // Fires when a slide with data-state=customevent is activated
+    Reveal.addEventListener( 'customevent', function() {
+      console.log( '"customevent" has fired' );
+    } );
+
+    // Fires each time a new slide is activated
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+      // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    } );
+
+    Reveal.initialize({
+      // Display controls in the bottom right corner
+      controls: true,
+
+      // Display a presentation progress bar
+      progress: true,
+
+      // If true; each slide will be pushed to the browser history
+      history: true,
+
+      // Loops the presentation, defaults to false
+      loop: false,
+
+      // Flags if mouse wheel navigation should be enabled
+      mouseWheel: true,
+
+      // Apply a 3D roll to links on hover
+      rollingLinks: true,
+
+      // Transition style
+      transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+    });
+  } );
+
+  // Load third party scripts
+  head.js( 'lib/js/classList.js' );
+  head.js( 'lib/js/highlight.js', function() {
+    // Fire off syntax highlighting for potential code samples in the slides
+    hljs.initHighlightingOnLoad();
+  } );
+
+  // If we're runnning the notes server we need to include some additional JS
+  // TODO Is there a better way to determine if we're running the notes server?
+  if( window.location.host === 'localhost:1947' ) {
+    head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
+  }
+</script>
+
+</body>
+>>>>>>> master
 </html>
